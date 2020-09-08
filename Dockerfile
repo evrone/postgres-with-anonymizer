@@ -10,6 +10,5 @@ RUN set -exo pipefail \
    && cd postgresql_anonymizer  \
    && make extension  \
    && make install \
-   && apk del .build-deps \
+   && apk del .build-deps postgresql-dev git build-base \
    && rm -rf /pg
-
