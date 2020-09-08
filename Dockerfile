@@ -4,7 +4,7 @@ WORKDIR /pg
 RUN set -exo pipefail \
   && apk add --no-cache --virtual .build-deps \ 
    build-base \
-   ocgit\
+   git\
    postgresql-dev  \
    && git clone https://gitlab.com/dalibo/postgresql_anonymizer.git  \
    && cd postgresql_anonymizer  \
