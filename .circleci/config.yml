@@ -6,4 +6,3 @@ workflows:
     jobs:
       - docker/publish:
           image: evrone/postgres-with-anonymizer
-          update-description: true
