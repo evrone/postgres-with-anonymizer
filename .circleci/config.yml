@@ -1,0 +1,9 @@
+orbs:
+  docker: circleci/docker@x.y.z
+version: 2.1
+workflows:
+  build-docker-image-only:
+    jobs:
+      - docker/publish:
+          image: evrone/postgres-with-anonymizer
+          update-description: true
