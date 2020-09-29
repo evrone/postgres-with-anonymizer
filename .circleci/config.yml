@@ -6,3 +6,4 @@ workflows:
     jobs:
       - docker/publish:
           image: evrone/postgres-with-anonymizer
+          tag: qa-pg-test
